@@ -1,28 +1,28 @@
 import React from "react";
-import { BsTwitter } from "react-icons/bs";
-import { BsYoutube } from "react-icons/bs";
-import { FaFacebookF } from "react-icons/fa";
+import { FaTwitter  } from "react-icons/fa";
+import { BsYoutube  } from "react-icons/bs";
+import { FaFacebook  } from "react-icons/fa";
 
 function Footer() {
   return (
-    <div className="footer-wrapper">
-      <div className="footer-section-one">
-        <div className="footer-logo-container">
+    <div className="footer">
+      <div className="footer-left">
+        <div className="logo">
           <h2>Apple</h2>
         </div>
-        <div className="footer-icons">
-          <BsTwitter />
-          <BsYoutube />
-          <FaFacebookF />
+        <div className="icons">
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><BsYoutube /></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
         </div>
       </div>
-      <div className="footer-section-two">
-        <div className="footer-section-columns">
+      <div className="footer-right">
+        <div className="cols">
           <span>Help</span>
           <span>About</span>
           <span>Contact</span>
         </div>
-        <div className="footer-section-columns">
+        <div className="cols">
           <span>+94123456789</span>
           <span>support@iphone.com</span>
         </div>

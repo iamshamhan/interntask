@@ -11,10 +11,10 @@ img {
 }
 
 body {
-  background-color: #f0f0f0;
+  background-color: #ffffff;
 }
 
-.App {
+.app {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
@@ -27,31 +27,37 @@ nav {
   padding: 1rem 0;
 }
 
-.nav-logo-container h2 {
+.nav-logo h2 {
   font-size: 1.8rem;
   font-weight: 700;
   color: #4c4c4c;
   margin: 0;
 }
 
-.navbar-links-container {
+.nav-links {
   display: flex;
 }
 
-.navbar-links-container a {
+.nav-links a {
   text-decoration: none;
   color: black;
   font-size: 1.1rem;
   margin-right: 2rem;
 }
 
-.navbar-links-container a:last-child {
+.nav-links a:last-child {
   margin-right: 0;
 }
 
-.primary-button {
+.menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.btn {
   padding: 0.9rem 1.75rem;
-  background-color: #1a237e;
+  background-color: #007bff;
   color: white;
   border: none;
   border-radius: 5rem;
@@ -59,36 +65,43 @@ nav {
   cursor: pointer;
 }
 
-.home-banner-container {
-  display: flex;
-  padding: 3rem 0;
+.btn:hover {
+  background-color: #0056b3;
 }
 
-.home-text-section {
+.hero {
+  display: flex;
+  padding: 3rem 0;
+  background-color: #f8f9fa;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.hero-text {
   flex: 1;
   margin-right: 3rem;
 }
 
-.home-image-section {
+.hero-img {
   flex: 1;
   max-width: 500px;
 }
 
-.primary-heading {
+.title {
   font-size: 2.5rem;
   color: #4c4c4c;
   margin-bottom: 1rem;
 }
 
-.primary-text {
+.text {
   font-size: 1.2rem;
   color: #6a6a6a;
   margin: 1.5rem 0;
 }
 
-.secondary-button {
+.button {
   padding: 1rem 2.5rem;
-  background-color: #1a237e;
+  background-color: #007bff;
   border: none;
   border-radius: 5rem;
   font-size: 1.1rem;
@@ -98,116 +111,92 @@ nav {
   display: inline-block;
 }
 
-.secondary-button svg {
+.button:hover {
+  background-color: #0056b3;
+}
+
+.button svg {
   margin-left: 0.5rem;
   vertical-align: middle;
   justify-content: right;
 }
 
 
-.about-section-container {
+.about {
   margin-top: 5rem;
   display: flex;
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 1rem;
 }
 
-.about-section-image-container {
+.about-img {
   flex: 1;
   max-width: 500px;
   margin-right: 3rem;
 }
 
-.about-section-text-container {
+.about-text {
   flex: 1;
 }
 
-.primary-subheading {
+.subtitle {
   font-weight: 700;
-  color: #1a237e;
+  color: #007bff;
   font-size: 1.15rem;
   margin-bottom: 0.5rem;
 }
 
-.about-buttons-container {
+.about-btn {
   margin-top: 2rem;
 }
 
-.work-section-wrapper {
+.work {
   margin-top: 5rem;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
 }
 
-.work-section-top {
+.work-top {
   text-align: center;
   margin-bottom: 3rem;
 }
 
-.work-section-bottom {
+.work-bottom {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.work-section-info {
+.step {
   width: 290px;
-  background-color: white;
+  background-color: #f8f9fa;
   padding: 2rem;
   text-align: center;
   border-radius: 1rem;
   margin: 1rem;
 }
 
-.work-section-info img {
-  max-width: 150px;
-  margin-bottom: 1rem;
-}
-
-.work-section-info h2 {
-  margin: 1rem 0;
-}
-
-.review-section-bottom {
+.review {
   margin: 2rem auto;
-  background-color: white;
+  background-color: #f8f9fa;
   padding: 2rem;
   text-align: center;
   max-width: 750px;
   border-radius: 2rem;
 }
 
-.review-section-bottom img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-}
-
-.review-section-bottom p {
-  font-weight: 700;
-}
-
-.review-stars-container {
-  display: flex;
-  justify-content: center;
-  margin: 1rem 0;
-}
-
-.review-stars-container svg {
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
-  font-size: 1.5rem;
-  color: #1a237e;
-}
-
-.review-stars-container svg:first-child {
-  margin-left: 0;
-}
-
-.contact-page-wrapper {
+.contact {
   text-align: center;
   margin: 6rem 0;
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 1rem;
 }
 
-.contact-form-container {
-  background-color: white;
+.form {
+  background-color: #f8f9fa;
   max-width: 700px;
   width: 100%;
   margin-top: 3rem;
@@ -223,62 +212,67 @@ nav {
   font-size: 1.1rem;
   padding: 0.5rem 1rem;
   justify-content: center;
+  outline: none;
 }
 
-.footer-wrapper {
+.footer {
   margin: 6rem 0;
   display: flex;
   justify-content: space-between;
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 1rem;
 }
 
-.footer-logo-container h2 {
+.logo {
   font-size: 1.8rem;
   font-weight: 700;
   color: #4c4c4c;
   margin: 0;
 }
 
-.footer-icons {
+.icons {
   margin-top: 2rem;
   display: flex;
 }
 
-.footer-icons svg {
-  font-size: 1.5rem;
-  color: #585858;
-  cursor: pointer;
+.icons a {
+  text-decoration: none;
   margin-right: 1rem;
 }
 
-.footer-icons svg:last-child {
+.icons a:last-child {
   margin-right: 0;
 }
 
-
-.footer-section-two {
+.footer-right {
   display: flex;
 }
 
-.footer-section-columns {
+.cols {
   display: flex;
   flex-direction: column;
   margin-right: 3rem;
 }
 
-.footer-section-columns:last-child {
+.cols:last-child {
   margin-right: 0;
 }
 
-.footer-section-columns span {
+.cols span {
   font-weight: 600;
   color: #4c4c4c;
   cursor: pointer;
   margin-bottom: 0.5rem;
 }
 
+.cols span:hover {
+  color: #007bff;
+}
+
 
 @media (max-width: 800px) {
-  .navbar-links-container {
+  .nav-links {
     position: fixed;
     top: 90px;
     right: -100%;
@@ -289,52 +283,54 @@ nav {
     padding-top: 3rem;
   }
 
-  .navbar-links-container.active {
+  .nav-links.active {
     right: 0;
   }
 
-  .navbar-menu-container {
-    display: flex;
+  .menu-icon {
+    display: block;
   }
 
-  .home-banner-container,
-  .about-section-container {
+  .hero,
+  .about {
     flex-direction: column;
     text-align: center;
   }
 
-  .about-section-container {
+  .about {
     margin-top: 3rem;
   }
 
-  .work-section-wrapper {
+  .work {
     margin-top: 3rem;
   }
 
-  .contact-form-container {
+  .form {
     flex-direction: column;
     border-radius: 1rem;
     justify-content: center;
   }
 
-  .contact-form-container input {
+  .form input {
     width: 100%;
     
     margin-bottom: 1rem;
   }
 
-  .footer-wrapper {
+  .footer {
     flex-direction: column;
-    background-color: white;
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 1rem;
   }
 
-  .footer-section-two {
+  .footer-right {
     flex-direction: column;
     margin-top: 2rem;
-    background-color: white;
+    background-color: #f8f9fa;
   }
 
-  .App {
+  .app {
     width: 95%;
   }
 }

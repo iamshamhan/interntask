@@ -5,22 +5,22 @@ import { FiArrowRight } from "react-icons/fi";
 
 function Home() {
   return (
-    <div className="home-container" id="home">
+    <div className="home" id="home">
       <Navbar />
-      <div className="home-banner-container">
-        <div className="home-text-section">
-    <h1 className="primary-heading">
+      <div className="hero">
+        <div className="hero-text">
+    <h1 className="title">
             Get The New iPhone
           </h1>
-          <p className="primary-text">
+          <p className="text">
             Best iPhone with good features and nice design.
             Works fast and good for everything you need
           </p>
-          <button className="secondary-button" style={{ marginTop: '1rem' }}>
+          <button className="button" style={{ marginTop: '1rem' }}>
             Shop Now <FiArrowRight />
           </button>
         </div>
-        <div className="home-image-section">
+        <div className="hero-img">
           <img src={img1} alt="iPhone" />
         </div>
       </div>
